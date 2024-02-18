@@ -1,15 +1,26 @@
 <template>
-  <BurulaiComponent/>
+  <div>
+
+    <CreateComponent></CreateComponent>
+    <IndexComponent/>
+
+  </div>
 </template>
 
 <script>
-import BurulaiComponent from './components/BurulaiComponent.vue';
-
-export default {
+import IndexComponent from "./components/IndexComponent.vue";
+import CreateComponent from "./components/CreateComponent.vue";
+import router from "@/router";
+export default  {
   name: 'App',
+
   components: {
-    BurulaiComponent
-  }
+    IndexComponent,
+    CreateComponent,
+  },
+
+  router
+
 }
 </script>
 
